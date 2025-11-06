@@ -16,5 +16,12 @@ pipeline{
                 sh 'npm test'
             }
         }
+        stage('Build docker'){
+            steps{
+                script{
+                    dockerImage = docker.build("${REGISTRY}:${IMAGE_TAG}")
+                }
+            }
+        }
     }
 }
