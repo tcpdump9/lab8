@@ -1,0 +1,9 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js"
+  },
+  "devDependencies": {}
+}
